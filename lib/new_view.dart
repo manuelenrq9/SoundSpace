@@ -67,6 +67,32 @@ class NewView extends StatelessWidget {
                     CreateButton(
                       buttonText: 'Iniciar Sesión',
                       maxWidth: 360,
+                    ),
+                    SizedBox(height: 100),
+                    Row(children: <Widget>[
+                      Text('SUSCRIBETE  ',
+                          style: TextStyle(
+                              fontSize: 23,
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold)),
+                    ]),
+                    SizedBox(height: 12),
+                    Row(children: <Widget>[
+                      Text('Si no tienes cuenta suscribete con tu',
+                          style: TextStyle(fontSize: 18, color: Colors.white)),
+                    ]),
+                    Row(children: <Widget>[
+                      Text('operadora',
+                          style: TextStyle(fontSize: 18, color: Colors.white)),
+                    ]),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    SizedBox(
+                      width: 300,
+                      child: Container(
+                        color: Colors.black.withOpacity(0.3),
+                      ),
                     )
                   ],
                 ),
