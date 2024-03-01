@@ -32,7 +32,7 @@ class NewView extends StatelessWidget {
                               color: Colors.white,
                               fontWeight: FontWeight.bold)),
                     ]),
-                    SizedBox(height: 23),
+                    SizedBox(height: 12),
                     Row(children: <Widget>[
                       Text('Número de teléfono ',
                           style: TextStyle(fontSize: 18, color: Colors.white)),
@@ -82,9 +82,33 @@ class NewView extends StatelessWidget {
                           style: TextStyle(fontSize: 18, color: Colors.white)),
                     ]),
                     Row(children: <Widget>[
-                      Text('operadora',
+                      Text('numero telefónico',
                           style: TextStyle(fontSize: 18, color: Colors.white)),
                     ]),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    SizedBox(
+                      width: 360,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.black.withOpacity(0.1),
+                          borderRadius: BorderRadius.circular(10.0),
+                          border:
+                              Border.all(color: Colors.black.withOpacity(0.3)),
+                        ),
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 16.0, vertical: 8.0),
+                        child: TextField(
+                          decoration: InputDecoration(
+                            border: InputBorder.none,
+                            hintText: 'Ej. 584141879142',
+                            hintStyle:
+                                TextStyle(color: Colors.white.withOpacity(0.7)),
+                          ),
+                        ),
+                      ),
+                    ),
                     SizedBox(
                       height: 10,
                     ),
