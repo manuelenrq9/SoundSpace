@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'Widgets/create_button.dart';
+import 'home_page.dart';
 
 class NewView extends StatelessWidget {
   @override
@@ -67,6 +68,12 @@ class NewView extends StatelessWidget {
                     CreateButton(
                       buttonText: 'Iniciar Sesión',
                       maxWidth: 360,
+                      actionToDo: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => HomePage()),
+                        );
+                      },
                     ),
                     SizedBox(height: 100),
                     Row(children: <Widget>[
