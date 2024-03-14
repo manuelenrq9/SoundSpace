@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
   AudioPlayer player = AudioPlayer();
   
   Future<void> playSound() async {
-    String soundPath = "audio/ManInTheBox,mp3";
+    String soundPath = "audio/ManInTheBox.mp3";
     await player.play(AssetSource(soundPath));
   }
 }
