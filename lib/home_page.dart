@@ -37,31 +37,46 @@ class _HomePageState extends State<HomePage> {
                     borderRadius: BorderRadius.circular(10.0),
                     border: Border.all(color: Colors.black.withOpacity(0.5)),
                   ),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Row(children: <Widget>[
-                        SizedBox(
-                          width: 15,
-                        ),
-                        Text('Soundgarden',
-                            style:
-                                TextStyle(color: Colors.white, fontSize: 18)),
-                      ]),
-                      Row(
+                  child: Row(children: <Widget>[
+                    Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.end,
                         children: <Widget>[
+                          Row(
+                            children: <Widget>[
+                              SizedBox(
+                                width: 15,
+                              ),
+                              Image(image: AssetImage('images/facelift.jpg')),
+                            ],
+                          )
+                        ]),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Row(children: <Widget>[
                           SizedBox(
                             width: 15,
                           ),
-                          Text('Rusty Cage',
-                              style: TextStyle(
-                                  color: Colors.white.withOpacity(0.5),
-                                  fontSize: 16))
-                        ],
-                      ),
-                    ],
-                  ),
+                          Text('Soundgarden',
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 18)),
+                        ]),
+                        Row(
+                          children: <Widget>[
+                            SizedBox(
+                              width: 15,
+                            ),
+                            Text('Rusty Cage',
+                                style: TextStyle(
+                                    color: Colors.white.withOpacity(0.5),
+                                    fontSize: 16))
+                          ],
+                        ),
+                      ],
+                    ),
+                  ]),
                 ),
               ),
             ],
