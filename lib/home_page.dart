@@ -47,7 +47,13 @@ class _HomePageState extends State<HomePage> {
                               SizedBox(
                                 width: 15,
                               ),
-                              Image(image: AssetImage('images/facelift.jpg')),
+                              SizedBox(
+                                  width: 50,
+                                  height: 50,
+                                  child: Image(
+                                    image: AssetImage('images/facelift.jpg'),
+                                    fit: BoxFit.cover,
+                                  )),
                             ],
                           )
                         ]),
