@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
+import 'Widgets/song_row.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -101,35 +102,62 @@ class _HomePageState extends State<HomePage> {
                     borderRadius: BorderRadius.circular(10.0),
                     border: Border.all(color: Colors.black.withOpacity(0.5)),
                   ),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Row(children: <Widget>[
-                        SizedBox(
-                          width: 15,
-                        ),
-                        Text('Alice in Chains',
-                            style:
-                                TextStyle(color: Colors.white, fontSize: 18)),
-                      ]),
-                      Row(
+                  child: Row(children: <Widget>[
+                    Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.end,
                         children: <Widget>[
+                          Row(
+                            children: <Widget>[
+                              SizedBox(
+                                width: 15,
+                              ),
+                              SizedBox(
+                                  width: 50,
+                                  height: 50,
+                                  child: Image(
+                                    image: AssetImage(
+                                        'assets/images/badmotorfinger.jpg'),
+                                    fit: BoxFit.cover,
+                                  )),
+                            ],
+                          )
+                        ]),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Row(children: <Widget>[
                           SizedBox(
                             width: 15,
                           ),
-                          Text('Man in the Box',
-                              style: TextStyle(
-                                  color: Colors.white.withOpacity(0.5),
-                                  fontSize: 16))
-                        ],
-                      ),
-                    ],
-                  ),
+                          Text('Alice in Chains',
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 18)),
+                        ]),
+                        Row(
+                          children: <Widget>[
+                            SizedBox(
+                              width: 15,
+                            ),
+                            Text('Man in the Box',
+                                style: TextStyle(
+                                    color: Colors.white.withOpacity(0.5),
+                                    fontSize: 16))
+                          ],
+                        ),
+                      ],
+                    ),
+                  ]),
                 ),
               ),
             ],
           ),
+          SizedBox(height: 20),
+          SongRow(
+              artistName: 'Prismática',
+              songTitle: 'Tres',
+              imagePath: 'assets/images/prisma.jpg'),
           SizedBox(height: 30),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
