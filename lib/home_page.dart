@@ -51,7 +51,8 @@ class _HomePageState extends State<HomePage> {
                                   width: 50,
                                   height: 50,
                                   child: Image(
-                                    image: AssetImage('images/facelift.jpg'),
+                                    image: AssetImage(
+                                        'assets/images/facelift.jpg'),
                                     fit: BoxFit.cover,
                                   )),
                             ],
