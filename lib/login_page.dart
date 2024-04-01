@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'Widgets/create_button.dart';
 import 'home_page.dart';
 
-class NewView extends StatelessWidget {
+class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(

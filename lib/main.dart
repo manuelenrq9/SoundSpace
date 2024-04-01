@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'new_view.dart';
+import 'login_page.dart';
 import 'Widgets/create_button.dart';
 
 void main() => runApp(MaterialApp(
@@ -33,7 +33,7 @@ class Home extends StatelessWidget {
                       actionToDo: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => NewView()),
+                          MaterialPageRoute(builder: (context) => LoginPage()),
                         );
                       },
                     ),

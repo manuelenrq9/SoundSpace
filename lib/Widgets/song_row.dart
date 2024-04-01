@@ -6,9 +6,9 @@ class SongRow extends StatelessWidget {
   final String songTitle;
 
   const SongRow({
+    required this.imagePath,
     required this.artistName,
     required this.songTitle,
-    required this.imagePath,
   });
 
   @override
@@ -57,7 +57,7 @@ class SongRow extends StatelessWidget {
                         style: TextStyle(color: Colors.white, fontSize: 18)),
                   ]),
                   Row(
-                    children: <Widget>[
+                    children:   <Widget>[
                       SizedBox(
                         width: 15,
                       ),
